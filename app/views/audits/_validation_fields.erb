@@ -1,0 +1,2 @@
+<%= f.input :name,:readonly => true, :label => 'Validation Name' %>
+ <%= f.association :auditee, :collection => @users , :label_method => :email, :value_method => :id %>

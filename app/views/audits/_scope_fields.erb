@@ -1,0 +1,4 @@
+<%= f.input :name, :readonly => true %>
+<%= f.simple_fields_for :validations do |builder| %>
+  <%= render 'validation_fields',:f => builder %>
+<% end %>

@@ -1,0 +1,14 @@
+<h2>New Audit</h2>
+<%= simple_form_for @audit do |f| %>
+  <%= f.input :store %>
+  <%= f.input :name %>
+  <%= f.input :due_date %>
+  <%= f.association :auditor, :collection => @users , :label_method => :email, :value_method => :id %>
+
+  <%= f.simple_fields_for :scopes do |scope_form| %>
+    <%= render 'scope_fields',:f => scope_form %>
+  <% end %>
+
+
+  <%= f.button :submit %>
+<% end %>
