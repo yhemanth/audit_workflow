@@ -6,7 +6,11 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem "ckeditor", "3.7.3"
+gem "paperclip"
+gem 'workflow'
+gem 'acts_as_commentable', '3.0.1'
+gem 'simple_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
